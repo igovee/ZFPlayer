@@ -19,14 +19,32 @@
   },
   "requires_arc": true,
   "static_framework": true,
-  "vendored_frameworks": "ZFPlayer.xcframework",
-  "resources": "ZFPlayer.bundle",
-  "frameworks": [
-    "UIKit",
-    "AVFoundation",
-    "AVKit",
-    "MediaPlayer",
-    "CoreTelephony",
-    "SystemConfiguration"
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "vendored_frameworks": "ZFPlayer.xcframework",
+      "resources": "ZFPlayer.bundle",
+      "frameworks": [
+        "UIKit",
+        "AVFoundation",
+        "AVKit",
+        "MediaPlayer",
+        "CoreTelephony",
+        "SystemConfiguration"
+      ]
+    },
+    {
+      "name": "ControlView",
+      "dependencies": {
+        "ZFPlayer/Core": []
+      }
+    },
+    {
+      "name": "AVPlayer",
+      "dependencies": {
+        "ZFPlayer/Core": []
+      }
+    }
   ]
 }
