@@ -11,58 +11,22 @@
     "renzifeng": "zifeng1300@gmail.com"
   },
   "source": {
-    "git": "https://github.com/renzifeng/ZFPlayer.git",
+    "git": "https://github.com/igovee/ZFPlayer.git",
     "tag": "4.1.4"
   },
-  "social_media_url": "http://weibo.com/zifeng1300",
   "platforms": {
-    "ios": "11.0"
+    "ios": "15.0"
   },
   "requires_arc": true,
   "static_framework": true,
-  "default_subspecs": "Core",
-  "pod_target_xcconfig": {
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
-  },
-  "user_target_xcconfig": {
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
-  },
-  "subspecs": [
-    {
-      "name": "Core",
-      "source_files": "ZFPlayer/Classes/Core/**/*",
-      "public_header_files": "ZFPlayer/Classes/Core/**/*.h",
-      "frameworks": [
-        "UIKit",
-        "MediaPlayer",
-        "AVFoundation"
-      ]
-    },
-    {
-      "name": "ControlView",
-      "source_files": "ZFPlayer/Classes/ControlView/**/*.{h,m}",
-      "public_header_files": "ZFPlayer/Classes/ControlView/**/*.h",
-      "resources": "ZFPlayer/Classes/ControlView/ZFPlayer.bundle",
-      "dependencies": {
-        "ZFPlayer/Core": [
-
-        ]
-      }
-    },
-    {
-      "name": "AVPlayer",
-      "source_files": "ZFPlayer/Classes/AVPlayer/**/*.{h,m}",
-      "public_header_files": "ZFPlayer/Classes/AVPlayer/**/*.h",
-      "dependencies": {
-        "ZFPlayer/Core": [
-
-        ]
-      }
-    }
-  ],
   "vendored_frameworks": "ZFPlayer.xcframework",
-  "ios": {
-    "public_header_files": "ZFPlayer.xcframework/ios-arm64/*/Headers/*.h",
-    "source_files": "ZFPlayer.xcframework/ios-arm64/*/Headers/*.h"
-  }
+  "resources": "ZFPlayer.bundle",
+  "frameworks": [
+    "UIKit",
+    "AVFoundation",
+    "AVKit",
+    "MediaPlayer",
+    "CoreTelephony",
+    "SystemConfiguration"
+  ]
 }

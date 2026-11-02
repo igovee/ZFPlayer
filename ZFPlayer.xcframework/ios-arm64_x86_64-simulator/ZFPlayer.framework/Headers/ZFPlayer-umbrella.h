@@ -10,20 +10,6 @@
 #endif
 #endif
 
-#import "ZFAVPlayerManager.h"
-#import "UIImageView+ZFCache.h"
-#import "UIView+ZFFrame.h"
-#import "ZFLandScapeControlView.h"
-#import "ZFLoadingView.h"
-#import "ZFNetworkSpeedMonitor.h"
-#import "ZFPlayerControlView.h"
-#import "ZFPlayerStatusBar.h"
-#import "ZFPortraitControlView.h"
-#import "ZFSliderView.h"
-#import "ZFSmallFloatControlView.h"
-#import "ZFSpeedLoadingView.h"
-#import "ZFUtilities.h"
-#import "ZFVolumeBrightnessView.h"
 #import "UIScrollView+ZFPlayer.h"
 #import "ZFFloatView.h"
 #import "ZFKVOController.h"
@@ -47,6 +33,20 @@
 #import "ZFPortraitViewController.h"
 #import "ZFPresentTransition.h"
 #import "ZFReachabilityManager.h"
+#import "UIImageView+ZFCache.h"
+#import "UIView+ZFFrame.h"
+#import "ZFLandScapeControlView.h"
+#import "ZFLoadingView.h"
+#import "ZFNetworkSpeedMonitor.h"
+#import "ZFPlayerControlView.h"
+#import "ZFPlayerStatusBar.h"
+#import "ZFPortraitControlView.h"
+#import "ZFSliderView.h"
+#import "ZFSmallFloatControlView.h"
+#import "ZFSpeedLoadingView.h"
+#import "ZFUtilities.h"
+#import "ZFVolumeBrightnessView.h"
+#import "ZFAVPlayerManager.h"
 
 FOUNDATION_EXPORT double ZFPlayerVersionNumber;
 FOUNDATION_EXPORT const unsigned char ZFPlayerVersionString[];
